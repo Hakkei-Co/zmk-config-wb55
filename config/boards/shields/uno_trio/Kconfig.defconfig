@@ -6,5 +6,11 @@ if SHIELD_UNO_TRIO
 config ZMK_KEYBOARD_NAME
 	default "Uno Trio"
 
+# A recent ZMK change has made using interrupts for the
+# kscan driver problematic
+config ZMK_KSCAN_DIRECT_POLLING
+        default y
+
+
 endif
 
