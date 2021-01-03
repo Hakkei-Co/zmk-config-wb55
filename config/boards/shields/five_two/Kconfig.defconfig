@@ -1,0 +1,11 @@
+if SHIELD_FIVETWO
+
+config ZMK_KEYBOARD_NAME
+    default "FiveTwo"
+
+# interrupts are a problem for some reason - check later
+config ZMK_KSCAN_MATRIX_POLLING
+    default y
+    
+endif
+
