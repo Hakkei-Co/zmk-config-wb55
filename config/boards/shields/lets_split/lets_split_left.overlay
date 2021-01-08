@@ -1,0 +1,12 @@
+#include "lets_split.dtsi"
+
+&kscan0 {
+	col-gpios
+		= <&gpiob   0 GPIO_ACTIVE_HIGH>
+		, <&gpiob   1 GPIO_ACTIVE_HIGH>
+		, <&gpiob   2 GPIO_ACTIVE_HIGH>
+		, <&gpiob  13 GPIO_ACTIVE_HIGH> // Nucleo pin config
+		, <&gpiob   4 GPIO_ACTIVE_HIGH>
+		, <&gpiob   5 GPIO_ACTIVE_HIGH>
+		;
+};

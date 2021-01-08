@@ -1,0 +1,24 @@
+if SHIELD_LETS_SPLIT_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Lets split Left"
+    
+endif
+
+if SHIELD_LETS_SPLIT_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Lets split Right"
+
+endif
+
+if SHIELD_LETS_SPLIT_LEFT || SHIELD_LETS_SPLIT_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+# interrupts are a problem for some reason - check later
+config ZMK_KSCAN_MATRIX_POLLING
+    default y
+
+endif
